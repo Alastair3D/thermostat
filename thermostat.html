@@ -12,37 +12,46 @@
   </head>
 
   <style media="screen">
-
+    .title {
+      display: inline-block;
+    }
   </style>
 
   <body>
 
-    <div class="current-power-mode">
-      Power Mode:
+    <h3>
+      Power Mode: <div id='Status'>Saving</div>
+    </h3>
+
+    <h2 class="title">
+      Temperature:
+      <br>
+      <div class="temperature"> </div>
+    </h2>
+
+    <div class="up-down-buttons">
+      <button class="up">
+        Up
+      </button>
+
+      <button class="down">
+        Down
+      </button>
+
     </div>
 
-    <div>
-      Temperature: <div class="temperature"> </div>
+    <div class="ps-button">
+      <button class="toggle-ps-mode">
+        Power Saving On/Off <div id='Toggle'></div>
+      </button>
     </div>
 
-    <div class="up">
-      Up
+    <div class="reset-button">
+        <button class="reset">
+          Reset
+        </button>
     </div>
 
-    <div class="down">
-      Down
-    </div>
 
-    <div class="toggle-ps-mode">
-      Power Saving On/Off <div id='Toggle'></div>
-    </div>
-
-    <div class="power-status">
-    Power Mode: <div id='Status'>Saving</div>
-  </div>
-
-    <div class="reset">
-      Reset
-    </div>
   </body>
 </html>

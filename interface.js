@@ -14,15 +14,19 @@ $(".down").click(function() {
 });
 
 $(".toggle-ps-mode").click(function() {
-  if (thermostat.powerSavingIsOn = true) {
+  if (thermostat.powerSavingIsOn === true) {
   thermostat.turnPowerSavingOff()
   $("#Status").text("Normal")
 } else {
   thermostat.turnPowerSavingOn()
-  $(".power-status").text("Saving")
+  $("#Status").text("Saving")
 }
-
 });
+
+$('.reset-button').click(function(){
+  thermostat.reset();
+  $('.temperature').text(thermostat.temperature);
+})
 
 
 
